@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<div class="container">
+    <input type="number" id="position">
+    <button onclick="mostrar()"> Enter</button>
+</div>
+
+    <script>
+        
+        function fibonacci(){
+            const limit = 10;
+            const fibo = [0,1];
+
+            for(i=2; i <= limit; i++){
+                fibo.push(fibo[i-1] + fibo[i-2]);
+                const codigo = Array(fibo[i]);	
+
+                console.log(codigo);
+            }              
+
+        }
+
+        function mostrar(){
+            const dato = document.querySelector('#position').value;
+            const indice = fibonacci(codigo.findIndex( codigo => codigo === dato));
+            alert(`el dato es ${indice}`);
+        }
+    
+    </script>
+</body>
+</html>
